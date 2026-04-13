@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 
 Route::get('/', HomeController::class)->name('home');
+Route::get('livros/{book}/comprar', [HomeController::class, 'purchase'])->name('books.purchase');
 
 Route::get('dashboard', function () {
     return Inertia::render('Admin/Dashboard', [

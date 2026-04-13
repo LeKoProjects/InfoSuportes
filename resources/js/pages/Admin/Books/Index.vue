@@ -38,6 +38,14 @@ const breadcrumbs: BreadcrumbItem[] = [
     { title: 'Livros', href: '/admin/books' },
 ];
 
+const panelClass = 'rounded-lg border border-neutral-200 bg-white p-6 text-neutral-950 shadow-sm dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-50';
+const labelClass = 'mb-2 block text-sm font-medium text-neutral-600 dark:text-neutral-400';
+const fieldClass = 'h-10 w-full rounded-md border border-neutral-300 bg-white px-3 text-sm text-neutral-950 dark:border-neutral-700 dark:bg-neutral-950 dark:text-neutral-50';
+const textareaClass = 'min-h-24 w-full rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-950 dark:border-neutral-700 dark:bg-neutral-950 dark:text-neutral-50';
+const fileFieldClass = 'flex h-10 w-full rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-950 dark:border-neutral-700 dark:bg-neutral-950 dark:text-neutral-50';
+const bookCardClass = 'overflow-hidden rounded-lg border border-neutral-200 bg-white shadow-sm dark:border-neutral-800 dark:bg-neutral-950/40';
+const mutedTextClass = 'text-sm text-neutral-600 dark:text-neutral-400';
+
 const createForm = useForm({
     category_id: '',
     title: '',
@@ -121,12 +129,12 @@ const submitEdit = (): void => {
 
     <AppLayout :breadcrumbs="breadcrumbs">
         <div class="space-y-6 p-4">
-            <section class="bg-card rounded-2xl border p-6">
+            <section :class="panelClass">
                 <h1 class="text-xl font-semibold">Novo livro</h1>
                 <form class="mt-4 grid gap-4 md:grid-cols-2" @submit.prevent="submitCreate">
                     <div>
-                        <label class="text-muted-foreground mb-2 block text-sm">Categoria</label>
-                        <select v-model="createForm.category_id" class="border-input bg-background h-10 w-full rounded-md border px-3 text-sm">
+                        <label :class="labelClass">Categoria</label>
+                        <select v-model="createForm.category_id" :class="fieldClass">
                             <option disabled value="">Selecione</option>
                             <option v-for="category in props.categories" :key="category.id" :value="String(category.id)">
                                 {{ category.name }}
@@ -135,44 +143,41 @@ const submitEdit = (): void => {
                         <InputError :message="createForm.errors.category_id" class="mt-2" />
                     </div>
                     <div>
-                        <label class="text-muted-foreground mb-2 block text-sm">Título</label>
+                        <label :class="labelClass">Título</label>
                         <Input v-model="createForm.title" />
                         <InputError :message="createForm.errors.title" class="mt-2" />
                     </div>
                     <div>
-                        <label class="text-muted-foreground mb-2 block text-sm">Autor</label>
+                        <label :class="labelClass">Autor</label>
                         <Input v-model="createForm.author" />
                     </div>
                     <div>
-                        <label class="text-muted-foreground mb-2 block text-sm">Preço (texto)</label>
+                        <label :class="labelClass">Preço (texto)</label>
                         <Input v-model="createForm.price" placeholder="R$ 79,90" />
                     </div>
                     <div class="md:col-span-2">
-                        <label class="text-muted-foreground mb-2 block text-sm">Link Hotmart</label>
+                        <label :class="labelClass">Link Hotmart</label>
                         <Input v-model="createForm.hotmart_url" />
                         <InputError :message="createForm.errors.hotmart_url" class="mt-2" />
                     </div>
                     <div class="md:col-span-2">
-                        <label class="text-muted-foreground mb-2 block text-sm">Descrição curta</label>
-                        <textarea
-                            v-model="createForm.description"
-                            class="border-input bg-background min-h-24 w-full rounded-md border px-3 py-2 text-sm"
-                        />
+                        <label :class="labelClass">Descrição curta</label>
+                        <textarea v-model="createForm.description" :class="textareaClass" />
                     </div>
                     <div>
-                        <label class="text-muted-foreground mb-2 block text-sm">Ordem</label>
+                        <label :class="labelClass">Ordem</label>
                         <Input v-model="createForm.sort_order" type="number" min="0" />
                     </div>
                     <div>
-                        <label class="text-muted-foreground mb-2 block text-sm">Clicks</label>
+                        <label :class="labelClass">Clicks</label>
                         <Input v-model="createForm.clicks" type="number" min="0" />
                     </div>
                     <div>
-                        <label class="text-muted-foreground mb-2 block text-sm">Capa</label>
+                        <label :class="labelClass">Capa</label>
                         <input
                             type="file"
                             accept=".jpg,.jpeg,.png,.webp"
-                            class="border-input bg-background flex h-10 w-full rounded-md border px-3 py-2 text-sm"
+                            :class="fileFieldClass"
                             @change="createForm.cover_image = ($event.target as HTMLInputElement).files?.[0] ?? null"
                         />
                         <InputError :message="createForm.errors.cover_image" class="mt-2" />
@@ -193,16 +198,16 @@ const submitEdit = (): void => {
                 </form>
             </section>
 
-            <section class="bg-card rounded-2xl border p-6">
+            <section :class="panelClass">
                 <h2 class="text-xl font-semibold">Livros cadastrados</h2>
                 <div class="mt-4 grid gap-4 md:grid-cols-2 xl:grid-cols-3">
-                    <article v-for="book in props.books" :key="book.id" class="overflow-hidden rounded-xl border">
+                    <article v-for="book in props.books" :key="book.id" :class="bookCardClass">
                         <img :src="book.cover_image_url ?? ''" :alt="book.title" class="h-52 w-full object-cover" />
                         <div class="space-y-2 p-4">
-                            <p class="text-muted-foreground text-sm">{{ book.category.name }}</p>
+                            <p :class="mutedTextClass">{{ book.category.name }}</p>
                             <h3 class="text-lg font-semibold">{{ book.title }}</h3>
-                            <p class="text-muted-foreground line-clamp-2 text-sm">{{ book.description }}</p>
-                            <p class="text-muted-foreground text-sm">Clicks: {{ book.clicks }}</p>
+                            <p class="line-clamp-2 text-sm text-neutral-600 dark:text-neutral-400">{{ book.description }}</p>
+                            <p :class="mutedTextClass">Clicks: {{ book.clicks }}</p>
                             <div class="flex gap-2 pt-2">
                                 <Button type="button" variant="secondary" @click="startEdit(book)">Editar</Button>
                                 <Button type="button" variant="destructive" @click="router.delete(route('admin.books.destroy', book.id))"
@@ -212,7 +217,7 @@ const submitEdit = (): void => {
                                     :href="book.hotmart_url"
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    class="inline-flex h-9 items-center rounded-md border px-3 text-sm"
+                                    class="inline-flex h-9 items-center rounded-md border border-neutral-300 px-3 text-sm text-neutral-700 dark:border-neutral-700 dark:text-neutral-200"
                                 >
                                     Link
                                 </a>
@@ -222,12 +227,12 @@ const submitEdit = (): void => {
                 </div>
             </section>
 
-            <section v-if="editingBook" class="bg-card rounded-2xl border p-6">
+            <section v-if="editingBook" :class="panelClass">
                 <h2 class="text-xl font-semibold">Editar livro: {{ editingBook.title }}</h2>
                 <form class="mt-4 grid gap-4 md:grid-cols-2" @submit.prevent="submitEdit">
                     <div>
-                        <label class="text-muted-foreground mb-2 block text-sm">Categoria</label>
-                        <select v-model="editForm.category_id" class="border-input bg-background h-10 w-full rounded-md border px-3 text-sm">
+                        <label :class="labelClass">Categoria</label>
+                        <select v-model="editForm.category_id" :class="fieldClass">
                             <option v-for="category in props.categories" :key="category.id" :value="String(category.id)">
                                 {{ category.name }}
                             </option>
@@ -235,44 +240,41 @@ const submitEdit = (): void => {
                         <InputError :message="editForm.errors.category_id" class="mt-2" />
                     </div>
                     <div>
-                        <label class="text-muted-foreground mb-2 block text-sm">Título</label>
+                        <label :class="labelClass">Título</label>
                         <Input v-model="editForm.title" />
                         <InputError :message="editForm.errors.title" class="mt-2" />
                     </div>
                     <div>
-                        <label class="text-muted-foreground mb-2 block text-sm">Autor</label>
+                        <label :class="labelClass">Autor</label>
                         <Input v-model="editForm.author" />
                     </div>
                     <div>
-                        <label class="text-muted-foreground mb-2 block text-sm">Preço (texto)</label>
+                        <label :class="labelClass">Preço (texto)</label>
                         <Input v-model="editForm.price" />
                     </div>
                     <div class="md:col-span-2">
-                        <label class="text-muted-foreground mb-2 block text-sm">Link Hotmart</label>
+                        <label :class="labelClass">Link Hotmart</label>
                         <Input v-model="editForm.hotmart_url" />
                         <InputError :message="editForm.errors.hotmart_url" class="mt-2" />
                     </div>
                     <div class="md:col-span-2">
-                        <label class="text-muted-foreground mb-2 block text-sm">Descrição curta</label>
-                        <textarea
-                            v-model="editForm.description"
-                            class="border-input bg-background min-h-24 w-full rounded-md border px-3 py-2 text-sm"
-                        />
+                        <label :class="labelClass">Descrição curta</label>
+                        <textarea v-model="editForm.description" :class="textareaClass" />
                     </div>
                     <div>
-                        <label class="text-muted-foreground mb-2 block text-sm">Ordem</label>
+                        <label :class="labelClass">Ordem</label>
                         <Input v-model="editForm.sort_order" type="number" min="0" />
                     </div>
                     <div>
-                        <label class="text-muted-foreground mb-2 block text-sm">Clicks</label>
+                        <label :class="labelClass">Clicks</label>
                         <Input v-model="editForm.clicks" type="number" min="0" />
                     </div>
                     <div>
-                        <label class="text-muted-foreground mb-2 block text-sm">Trocar capa</label>
+                        <label :class="labelClass">Trocar capa</label>
                         <input
                             type="file"
                             accept=".jpg,.jpeg,.png,.webp"
-                            class="border-input bg-background flex h-10 w-full rounded-md border px-3 py-2 text-sm"
+                            :class="fileFieldClass"
                             @change="editForm.cover_image = ($event.target as HTMLInputElement).files?.[0] ?? null"
                         />
                         <InputError :message="editForm.errors.cover_image" class="mt-2" />

@@ -24,6 +24,10 @@ const breadcrumbs: BreadcrumbItem[] = [
     { title: 'Categorias', href: '/admin/categories' },
 ];
 
+const panelClass = 'rounded-lg border border-neutral-200 bg-white p-6 text-neutral-950 shadow-sm dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-50';
+const itemClass = 'rounded-lg border border-neutral-200 bg-white p-4 shadow-sm dark:border-neutral-800 dark:bg-neutral-950/40';
+const mutedTextClass = 'text-sm text-neutral-600 dark:text-neutral-400';
+
 const createForm = useForm({
     name: '',
     sort_order: 0,
@@ -69,7 +73,7 @@ const submitEdit = (): void => {
 
     <AppLayout :breadcrumbs="breadcrumbs">
         <div class="space-y-6 p-4">
-            <section class="bg-card rounded-2xl border p-6">
+            <section :class="panelClass">
                 <h1 class="text-xl font-semibold">Nova categoria</h1>
                 <form class="mt-4 grid gap-4 md:grid-cols-[2fr_1fr_auto]" @submit.prevent="submitCreate">
                     <div>
@@ -84,16 +88,16 @@ const submitEdit = (): void => {
                 </form>
             </section>
 
-            <section class="bg-card rounded-2xl border p-6">
+            <section :class="panelClass">
                 <h2 class="text-xl font-semibold">Categorias cadastradas</h2>
                 <p v-if="$page.props.errors.category" class="mt-2 text-sm text-red-600">{{ $page.props.errors.category }}</p>
 
                 <div class="mt-4 space-y-3">
-                    <article v-for="category in props.categories" :key="category.id" class="rounded-xl border p-4">
+                    <article v-for="category in props.categories" :key="category.id" :class="itemClass">
                         <div class="flex flex-wrap items-center justify-between gap-2">
                             <div>
                                 <p class="font-medium">{{ category.name }}</p>
-                                <p class="text-muted-foreground text-sm">{{ category.books_count }} livros</p>
+                                <p :class="mutedTextClass">{{ category.books_count }} livros</p>
                             </div>
                             <div class="flex gap-2">
                                 <Button type="button" variant="secondary" @click="startEdit(category)">Editar</Button>
@@ -106,7 +110,7 @@ const submitEdit = (): void => {
                 </div>
             </section>
 
-            <section v-if="editId" class="bg-card rounded-2xl border p-6">
+            <section v-if="editId" :class="panelClass">
                 <h2 class="text-xl font-semibold">Editar categoria</h2>
                 <form class="mt-4 grid gap-4 md:grid-cols-[2fr_1fr_auto]" @submit.prevent="submitEdit">
                     <div>
