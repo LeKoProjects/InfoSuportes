@@ -253,15 +253,15 @@
 
         <section class="bg-[#e8f0f8] py-14 dark:bg-[#0f2339]">
             <div class="mx-auto grid max-w-7xl gap-5 px-5 md:grid-cols-3">
-                <div class="animate-fade-in-up rounded-lg border border-[#b3ddf0] bg-white p-6 transition duration-300 hover:shadow-lg hover:border-[#1a6fb5] dark:border-[#1e3a5f] dark:bg-[#1e3a5f]">
+                <div class="animate-fade-in-up animate-in rounded-lg border border-[#b3ddf0] bg-white p-6 transition duration-300 hover:shadow-lg hover:border-[#1a6fb5] dark:border-[#1e3a5f] dark:bg-[#1e3a5f]">
                     <h3 class="font-['Space_Grotesk'] text-xl font-bold">Conhecimento prático</h3>
                     <p class="mt-3 leading-7 text-[#415149] dark:text-[#b9c7bf]">Livros e conteúdos aplicáveis na sua vida profissional e pessoal.</p>
                 </div>
-                <div class="animate-fade-in-up rounded-lg border border-[#b3ddf0] bg-white p-6 transition duration-300 hover:shadow-lg hover:border-[#1a6fb5] dark:border-[#1e3a5f] dark:bg-[#1e3a5f]" style="animation-delay: 0.1s">
+                <div class="animate-fade-in-up animate-in rounded-lg border border-[#b3ddf0] bg-white p-6 transition duration-300 hover:shadow-lg hover:border-[#1a6fb5] dark:border-[#1e3a5f] dark:bg-[#1e3a5f]" style="animation-delay: 0.1s">
                     <h3 class="font-['Space_Grotesk'] text-xl font-bold">Compra segura</h3>
                     <p class="mt-3 leading-7 text-[#415149] dark:text-[#b9c7bf]">Transações via Hotmart, a maior plataforma de cursos e livros do Brasil.</p>
                 </div>
-                <div class="animate-fade-in-up rounded-lg border border-[#b3ddf0] bg-white p-6 transition duration-300 hover:shadow-lg hover:border-[#1a6fb5] dark:border-[#1e3a5f] dark:bg-[#1e3a5f]" style="animation-delay: 0.2s">
+                <div class="animate-fade-in-up animate-in rounded-lg border border-[#b3ddf0] bg-white p-6 transition duration-300 hover:shadow-lg hover:border-[#1a6fb5] dark:border-[#1e3a5f] dark:bg-[#1e3a5f]" style="animation-delay: 0.2s">
                     <h3 class="font-['Space_Grotesk'] text-xl font-bold">Curadoria especializada</h3>
                     <p class="mt-3 leading-7 text-[#415149] dark:text-[#b9c7bf]">Seleção cuidadosa de títulos sobre educação, finanças e desenvolvimento.</p>
                 </div>
