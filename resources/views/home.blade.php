@@ -101,16 +101,16 @@
         <section class="border-b border-[#e8f0f8] bg-[radial-gradient(circle_at_20%_20%,#d9ecf7_0,#f8fbfe_30%,#f8fbfe_100%)] transition-colors dark:border-[#1e3a5f] dark:bg-[radial-gradient(circle_at_20%_20%,#1a4b7a_0,#0d1b2e_34%,#0d1b2e_100%)]">
             <div class="mx-auto grid max-w-7xl gap-10 px-5 py-14 md:grid-cols-[1.1fr_0.9fr] md:items-center lg:py-20">
                 <div class="max-w-3xl">
-                    <p class="mb-4 inline-flex rounded-lg border border-[#b3ddf0] bg-white px-3 py-2 text-xs font-bold uppercase tracking-normal text-[#1a6fb5] dark:border-[#1e5ca8] dark:bg-[#1e3a5f] dark:text-[#4aaede]">
+                    <p class="mb-4 inline-flex animate-in rounded-lg border border-[#b3ddf0] bg-white px-3 py-2 text-xs font-bold uppercase tracking-normal text-[#1a6fb5] dark:border-[#1e5ca8] dark:bg-[#1e3a5f] dark:text-[#4aaede]">
                         Educação e Investimento
                     </p>
-                    <h1 class="animate-fade-in-up hero-text font-['Space_Grotesk'] text-4xl font-bold leading-tight tracking-normal md:text-6xl">
+                    <h1 class="animate-fade-in-up animate-in hero-text font-['Space_Grotesk'] text-4xl font-bold leading-tight tracking-normal md:text-6xl" style="animation-delay: 0.05s">
                         Invista no seu futuro com conhecimento
                     </h1>
-                    <p class="animate-fade-in-up mt-5 max-w-2xl text-lg leading-8 text-[#415149] dark:text-[#b9c7bf]" style="animation-delay: 0.2s">
+                    <p class="animate-fade-in-up animate-in mt-5 max-w-2xl text-lg leading-8 text-[#415149] dark:text-[#b9c7bf]" style="animation-delay: 0.1s">
                         Catálogo curado de livros sobre educação financeira, desenvolvimento pessoal, tecnologia e carreira. Acesse via Hotmart.
                     </p>
-                    <div class="animate-fade-in-up mt-8 flex flex-wrap gap-3" style="animation-delay: 0.4s">
+                    <div class="animate-fade-in-up animate-in mt-8 flex flex-wrap gap-3" style="animation-delay: 0.15s">
                         <a href="#catalogo" class="rounded-lg bg-[#1a6fb5] px-5 py-3 text-sm font-bold text-white transition duration-300 hover:bg-[#4aaede] hover:shadow-lg hover:shadow-blue-500/50 transform hover:scale-105">
                             Ver catálogo
                         </a>
@@ -122,7 +122,7 @@
 
                 <div class="grid gap-3 sm:grid-cols-2">
                     @forelse ($featuredBooks->take(4) as $book)
-                        <a href="{{ route('books.purchase', $book) }}" class="group animate-fade-in-up rounded-lg border border-[#e8f0f8] bg-white p-3 shadow-[0_18px_60px_rgba(26,111,181,0.10)] transition duration-300 hover:-translate-y-2 hover:border-[#1a6fb5] hover:shadow-[0_20px_40px_rgba(26,111,181,0.20)] dark:border-[#1e3a5f] dark:bg-[#1e3a5f]" style="animation-delay: {{ $loop->index * 0.1 }}s">
+                        <a href="{{ route('books.purchase', $book) }}" class="group animate-fade-in-up animate-in rounded-lg border border-[#e8f0f8] bg-white p-3 shadow-[0_18px_60px_rgba(26,111,181,0.10)] transition duration-300 hover:-translate-y-2 hover:border-[#1a6fb5] hover:shadow-[0_20px_40px_rgba(26,111,181,0.20)] dark:border-[#1e3a5f] dark:bg-[#1e3a5f]" style="animation-delay: {{ (0.2 + $loop->index * 0.05) }}s">
                             @if ($book->cover_image_url)
                                 <img src="{{ $book->cover_image_url }}" alt="Capa do livro {{ $book->title }}" class="aspect-[4/5] w-full rounded-lg object-cover">
                             @else
