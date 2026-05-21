@@ -269,17 +269,17 @@
         </section>
 
         <section class="mx-auto max-w-4xl px-5 py-14">
-            <p class="animate-slide-in-left text-sm font-bold uppercase tracking-normal text-[#1a6fb5]">FAQ</p>
+            <p class="animate-slide-in-left animate-in text-sm font-bold uppercase tracking-normal text-[#1a6fb5]">FAQ</p>
             <div class="mt-5 divide-y divide-[#e8f0f8] rounded-lg border border-[#e8f0f8] bg-white dark:divide-[#1e3a5f] dark:border-[#1e3a5f] dark:bg-[#1e3a5f]">
-                <details class="animate-fade-in-up group p-5 transition duration-300 open:bg-blue-50 dark:open:bg-[#0f2339]" open>
+                <details class="animate-fade-in-up animate-in group p-5 transition duration-300 open:bg-blue-50 dark:open:bg-[#0f2339]" open>
                     <summary class="cursor-pointer font-['Space_Grotesk'] text-lg font-bold transition hover:text-[#1a6fb5]">A compra acontece onde?</summary>
                     <p class="mt-3 leading-7 text-[#415149] dark:text-[#b9c7bf]">Na Hotmart. O botão de compra leva direto para o checkout do livro.</p>
                 </details>
-                <details class="animate-fade-in-up group p-5 transition duration-300 open:bg-blue-50 dark:open:bg-[#0f2339]" style="animation-delay: 0.1s">
+                <details class="animate-fade-in-up animate-in group p-5 transition duration-300 open:bg-blue-50 dark:open:bg-[#0f2339]" style="animation-delay: 0.1s">
                     <summary class="cursor-pointer font-['Space_Grotesk'] text-lg font-bold transition hover:text-[#1a6fb5]">Os livros ficam disponíveis na hora?</summary>
                     <p class="mt-3 leading-7 text-[#415149] dark:text-[#b9c7bf]">A entrega segue as regras da página do produto na Hotmart.</p>
                 </details>
-                <details class="animate-fade-in-up group p-5 transition duration-300 open:bg-blue-50 dark:open:bg-[#0f2339]" style="animation-delay: 0.2s">
+                <details class="animate-fade-in-up animate-in group p-5 transition duration-300 open:bg-blue-50 dark:open:bg-[#0f2339]" style="animation-delay: 0.2s">
                     <summary class="cursor-pointer font-['Space_Grotesk'] text-lg font-bold transition hover:text-[#1a6fb5]">Como escolher o melhor livro?</summary>
                     <p class="mt-3 leading-7 text-[#415149] dark:text-[#b9c7bf]">Comece pela categoria mais próxima do seu objetivo atual.</p>
                 </details>
