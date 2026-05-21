@@ -158,15 +158,15 @@
         <section id="destaques" class="mx-auto max-w-7xl px-5 py-14">
             <div class="mb-7 flex flex-wrap items-end justify-between gap-4">
                 <div>
-                    <p class="animate-slide-in-left text-sm font-bold uppercase tracking-normal text-[#1a6fb5]">Destaques</p>
-                    <h2 class="animate-fade-in-up font-['Space_Grotesk'] text-3xl font-bold tracking-normal md:text-4xl">Títulos principais</h2>
+                    <p class="animate-slide-in-left animate-in text-sm font-bold uppercase tracking-normal text-[#1a6fb5]">Destaques</p>
+                    <h2 class="animate-fade-in-up animate-in font-['Space_Grotesk'] text-3xl font-bold tracking-normal md:text-4xl" style="animation-delay: 0.05s">Títulos principais</h2>
                 </div>
-                <a href="#catalogo" class="rounded-lg border border-[#0d1b2e] px-4 py-2 text-sm font-bold transition duration-300 hover:bg-white hover:border-[#1a6fb5] dark:border-[#b9c7bf] dark:hover:bg-[#1e3a5f] dark:hover:border-[#4aaede]">Ver catálogo</a>
+                <a href="#catalogo" class="animate-in rounded-lg border border-[#0d1b2e] px-4 py-2 text-sm font-bold transition duration-300 hover:bg-white hover:border-[#1a6fb5] dark:border-[#b9c7bf] dark:hover:bg-[#1e3a5f] dark:hover:border-[#4aaede]" style="animation-delay: 0.1s">Ver catálogo</a>
             </div>
 
             <div class="flex snap-x gap-4 overflow-x-auto pb-4">
                 @forelse ($featuredBooks as $book)
-                    <article class="min-w-[270px] snap-start animate-fade-in-up rounded-lg border border-[#e8f0f8] bg-white p-4 transition duration-300 hover:shadow-lg hover:border-[#1a6fb5] dark:border-[#1e3a5f] dark:bg-[#1e3a5f] md:min-w-[340px]" style="animation-delay: {{ ($loop->index % 4) * 0.15 }}s">
+                    <article class="min-w-[270px] snap-start animate-fade-in-up animate-in rounded-lg border border-[#e8f0f8] bg-white p-4 transition duration-300 hover:shadow-lg hover:border-[#1a6fb5] dark:border-[#1e3a5f] dark:bg-[#1e3a5f] md:min-w-[340px]" style="animation-delay: {{ (0.15 + ($loop->index % 4) * 0.05) }}s">
                         @if ($book->cover_image_url)
                             <img src="{{ $book->cover_image_url }}" alt="Capa do livro {{ $book->title }}" class="aspect-[4/5] w-full rounded-lg object-cover">
                         @else
