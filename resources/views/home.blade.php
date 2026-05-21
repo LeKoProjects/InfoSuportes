@@ -195,10 +195,10 @@
 
         <section id="categorias" class="border-y border-[#e8f0f8] bg-white py-12 dark:border-[#1e3a5f] dark:bg-[#0f2339]">
             <div class="mx-auto max-w-7xl px-5">
-                <p class="animate-slide-in-left text-sm font-bold uppercase tracking-normal text-[#1a6fb5]">Categorias</p>
+                <p class="animate-in animate-slide-in-left text-sm font-bold uppercase tracking-normal text-[#1a6fb5]">Categorias</p>
                 <div class="mt-5 flex flex-wrap gap-3">
                     @forelse ($categories as $category)
-                        <a href="#catalogo" class="animate-fade-in-up rounded-lg border border-[#e8f0f8] bg-[#f8fbfe] px-4 py-3 text-sm font-bold text-[#0d1b2e] transition duration-300 hover:border-[#1a6fb5] hover:bg-white dark:border-[#1e3a5f] dark:bg-[#0f1b2a] dark:text-[#eef7f1] dark:hover:bg-[#1e3a5f]" style="animation-delay: {{ $loop->index * 0.08 }}s">
+                        <a href="#catalogo" class="animate-in animate-fade-in-up rounded-lg border border-[#e8f0f8] bg-[#f8fbfe] px-4 py-3 text-sm font-bold text-[#0d1b2e] transition duration-300 hover:border-[#1a6fb5] hover:bg-white dark:border-[#1e3a5f] dark:bg-[#0f1b2a] dark:text-[#eef7f1] dark:hover:bg-[#1e3a5f]" style="animation-delay: {{ $loop->index * 0.08 }}s">
                             {{ $category->name }} <span class="text-[#1a6fb5]">{{ $category->books_count }}</span>
                         </a>
                     @empty
