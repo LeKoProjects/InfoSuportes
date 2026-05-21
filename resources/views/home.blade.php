@@ -212,14 +212,14 @@
 
         <section id="catalogo" class="mx-auto max-w-7xl px-5 py-14">
             <div class="mb-7 max-w-3xl">
-                <p class="animate-slide-in-left text-sm font-bold uppercase tracking-normal text-[#1a6fb5]">Catálogo</p>
-                <h2 class="animate-fade-in-up font-['Space_Grotesk'] text-3xl font-bold tracking-normal md:text-4xl">Biblioteca completa</h2>
-                <p class="animate-fade-in-up mt-3 text-[#415149] dark:text-[#b9c7bf]" style="animation-delay: 0.2s">Selecione um título, clique em comprar e finalize seu pedido via Hotmart.</p>
+                <p class="animate-in animate-slide-in-left text-sm font-bold uppercase tracking-normal text-[#1a6fb5]">Catálogo</p>
+                <h2 class="animate-in animate-fade-in-up font-['Space_Grotesk'] text-3xl font-bold tracking-normal md:text-4xl" style="animation-delay: 0.05s">Biblioteca completa</h2>
+                <p class="animate-in animate-fade-in-up mt-3 text-[#415149] dark:text-[#b9c7bf]" style="animation-delay: 0.1s">Selecione um título, clique em comprar e finalize seu pedido via Hotmart.</p>
             </div>
 
             <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 @forelse ($books as $book)
-                    <article class="group animate-fade-in-up flex h-full flex-col rounded-lg border border-[#e8f0f8] bg-white p-4 transition duration-300 hover:-translate-y-2 hover:border-[#1a6fb5] hover:shadow-lg dark:border-[#1e3a5f] dark:bg-[#1e3a5f]" style="animation-delay: {{ ($loop->index % 12) * 0.05 }}s">
+                    <article class="group animate-in animate-fade-in-up flex h-full flex-col rounded-lg border border-[#e8f0f8] bg-white p-4 transition duration-300 hover:-translate-y-2 hover:border-[#1a6fb5] hover:shadow-lg dark:border-[#1e3a5f] dark:bg-[#1e3a5f]" style="animation-delay: {{ (0.15 + ($loop->index % 12) * 0.05) }}s">
                         @if ($book->cover_image_url)
                             <img src="{{ $book->cover_image_url }}" alt="Capa do livro {{ $book->title }}" class="aspect-[4/5] w-full rounded-lg object-cover">
                         @else
