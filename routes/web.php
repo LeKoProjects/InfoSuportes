@@ -11,6 +11,12 @@ use Inertia\Inertia;
 Route::get('/', HomeController::class)->name('home');
 Route::get('livros/{book}/comprar', [HomeController::class, 'purchase'])->name('books.purchase');
 
+Route::view('solucoes', 'pages.solucoes')->name('solucoes');
+Route::view('servicos', 'pages.servicos')->name('servicos');
+Route::view('suporte', 'pages.suporte')->name('suporte');
+Route::view('empresa', 'pages.empresa')->name('empresa');
+Route::view('contato', 'pages.contato')->name('contato');
+
 Route::get('dashboard', function () {
     return Inertia::render('Admin/Dashboard', [
         'categoryCount' => Category::query()->count(),
