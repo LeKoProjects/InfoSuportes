@@ -34,7 +34,7 @@
             <p style="color: var(--gray-400); font-size: 15px; margin: 0;">Parada crítica, indisponibilidade ou incidente de segurança.</p>
           </div>
         </div>
-        <a href="tel:+5571999999999" class="btn" style="background: var(--orange-500); color: #fff; border-color: var(--orange-500);">(71) 99999-9999</a>
+        <a href="tel:+5571999999999" class="btn" style="background: var(--orange-500); color: #fff; border-color: var(--orange-500);">(71) 98419-8239</a>
       </div>
     </div>
   </section>
