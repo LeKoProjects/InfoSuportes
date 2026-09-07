@@ -195,6 +195,21 @@ a:hover { color: var(--text-link-hover); }
 .field{ width: 100%; border: 1px solid var(--border-default); border-radius: var(--radius-md); padding: 13px 15px; font-family: var(--font-sans); font-size: 15px; color: var(--text-strong); background: var(--surface-card); outline: none; transition: border-color var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out); }
 .field:focus{ border-color: var(--blue-500); box-shadow: var(--ring-brand); }
 
+/* ---- Botão flutuante WhatsApp ---- */
+.wa-float{ position: fixed; right: 24px; bottom: 24px; z-index: 60; width: 58px; height: 58px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; background: #25d366; color: #fff; box-shadow: 0 10px 24px -8px rgba(37,211,102,0.5), 0 3px 8px rgba(3,7,18,0.16); transition: transform var(--dur-base) var(--ease-out), box-shadow var(--dur-base) var(--ease-out); }
+.wa-float:hover{ color: #fff; transform: translateY(-3px); box-shadow: 0 16px 32px -8px rgba(37,211,102,0.55), 0 5px 12px rgba(3,7,18,0.2); }
+.wa-float:focus-visible{ outline: none; box-shadow: 0 0 0 4px rgba(37,211,102,0.35), 0 10px 24px -8px rgba(37,211,102,0.5); }
+.wa-float svg{ width: 30px; height: 30px; display: block; position: relative; z-index: 1; }
+.wa-float-label{ position: absolute; right: calc(100% + 12px); top: 50%; transform: translateY(-50%); padding: 8px 14px; border-radius: var(--radius-full); background: var(--gray-900); color: #fff; font-weight: 600; font-size: 13.5px; letter-spacing: 0.01em; white-space: nowrap; box-shadow: var(--shadow-sm); opacity: 0; visibility: hidden; transition: opacity var(--dur-base) var(--ease-out); pointer-events: none; }
+.wa-float:hover .wa-float-label, .wa-float:focus-visible .wa-float-label{ opacity: 1; visibility: visible; }
+.wa-float::after{ content: ""; position: absolute; inset: 0; border-radius: 50%; background: #25d366; opacity: 0.45; animation: waPulse 2.6s var(--ease-out) infinite; pointer-events: none; z-index: -1; }
+@keyframes waPulse{ 0%{ transform: scale(1); opacity: 0.45; } 70%{ transform: scale(1.5); opacity: 0; } 100%{ transform: scale(1.5); opacity: 0; } }
+@media (prefers-reduced-motion: reduce){
+  .wa-float, .wa-float-label{ transition: none; }
+  .wa-float:hover{ transform: none; }
+  .wa-float::after{ animation: none; opacity: 0; }
+}
+
 /* ---- Responsive ---- */
 @media (max-width: 900px){
   .sol-grid{ grid-template-columns: 1fr !important; }
@@ -207,6 +222,8 @@ a:hover { color: var(--text-link-hover); }
   .util-bar{ display: none !important; }
   .main-nav{ display: none !important; }
   .section{ padding: 64px 0 !important; }
+  .wa-float{ right: 16px; bottom: 16px; }
+  .wa-float-label{ display: none; }
 }
   </style>
   @endverbatim
@@ -326,6 +343,20 @@ a:hover { color: var(--text-link-hover); }
       </div>
     </div>
   </footer>
+
+  <!-- Botão flutuante WhatsApp -->
+  @php
+    $whatsappNumber = '5571984198239';
+    $whatsappMessage = 'Olá! Vim pelo site da InfoSuportes e gostaria de falar com um especialista.';
+  @endphp
+  <a class="wa-float"
+     href="https://wa.me/{{ $whatsappNumber }}?text={{ rawurlencode($whatsappMessage) }}"
+     target="_blank"
+     rel="noopener noreferrer"
+     aria-label="Falar com a InfoSuportes no WhatsApp">
+    <span class="wa-float-label">Fale conosco</span>
+    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.38-.27.3-1.04 1.01-1.04 2.47s1.06 2.86 1.21 3.06c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.79 9.79 0 0 1-1.5-5.23c0-5.4 4.4-9.8 9.82-9.8 2.62 0 5.08 1.03 6.93 2.88a9.74 9.74 0 0 1 2.87 6.93c0 5.4-4.4 9.8-9.8 9.8M20.5 3.49A11.72 11.72 0 0 0 12.05 0C5.56 0 .28 5.28.28 11.77c0 2.07.54 4.1 1.57 5.88L.18 24l6.5-1.7a11.72 11.72 0 0 0 5.37 1.36h.01c6.49 0 11.77-5.28 11.77-11.77 0-3.15-1.22-6.1-3.44-8.33"/></svg>
+  </a>
 
 </div>
 

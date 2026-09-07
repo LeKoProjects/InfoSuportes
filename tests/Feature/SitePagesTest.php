@@ -50,4 +50,16 @@ class SitePagesTest extends TestCase
             $this->get(route('home'))->assertSee(route($routeName), false);
         }
     }
+
+    public function test_floating_whatsapp_button_shows_on_every_site_page(): void
+    {
+        foreach (['home', 'solucoes', 'servicos', 'suporte', 'empresa', 'contato'] as $routeName) {
+            $response = $this->get(route($routeName));
+
+            $response->assertOk();
+            $response->assertSee('https://wa.me/5571984198239?text=', false);
+            $response->assertSee('class="wa-float"', false);
+            $response->assertSee('Falar com a InfoSuportes no WhatsApp', false);
+        }
+    }
 }
