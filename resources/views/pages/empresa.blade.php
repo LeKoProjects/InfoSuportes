@@ -9,10 +9,10 @@
     <div class="container-x" style="position: relative; z-index: 2; padding-top: 88px; padding-bottom: 104px;">
       <p class="eyebrow" style="color: var(--green-400);">Quem somos</p>
       <h1 class="hero-h1" style="font-size: 52px; line-height: 1.08; letter-spacing: -0.02em; font-weight: 800; color: #fff; margin: 0; max-width: 720px;">
-        Especialistas em manter empresas <span style="color: var(--blue-300);">no ar</span>
+        Transformamos complexidade em <span style="color: var(--blue-300);">praticidade</span>
       </h1>
       <p class="lead" style="color: var(--gray-300); max-width: 620px; margin: 22px 0 0;">
-        Somos um time técnico de Salvador dedicado a infraestrutura, redes e segurança. Tratamos a TI dos nossos clientes como se fosse a nossa.
+        A InfoSuportes nasceu da experiência de especialistas em tecnologia, com mais de 20 anos de atuação no mercado. Uma história construída sobre inovação, confiança e dedicação.
       </p>
     </div>
   </section>
@@ -25,7 +25,7 @@
           ['+120', 'clientes atendidos'],
           ['99,9%', 'uptime médio'],
           ['24/7', 'monitoramento'],
-          ['+10', 'anos de estrada'],
+          ['+20', 'anos de mercado'],
         ] as [$num, $label])
           <div class="card">
             <p style="font-size: 40px; font-weight: 800; letter-spacing: -0.02em; color: var(--blue-500); margin: 0 0 6px;">{{ $num }}</p>
@@ -42,12 +42,15 @@
       <div class="grid-2" style="align-items: center; gap: 56px;">
         <div>
           <p class="eyebrow">Nossa história</p>
-          <h2 class="section-title" style="margin-bottom: 20px;">Nascemos para resolver o que trava o seu negócio</h2>
+          <h2 class="section-title" style="margin-bottom: 20px;">Mais de 20 anos acompanhando a evolução digital</h2>
           <p style="color: var(--text-body); font-size: 16px; line-height: 1.7; margin: 0 0 16px;">
-            A InfoSuportes começou atendendo pequenas empresas de Salvador que não podiam depender de improviso na tecnologia. Com o tempo, viramos o time de TI de referência de dezenas de operações — de escritórios a indústrias.
+            A InfoSuportes nasceu da experiência de especialistas na área de tecnologia, que acumulam mais de 20 anos de atuação no mercado. Nossa história é construída sobre inovação, confiança e dedicação em oferecer soluções que acompanham a evolução digital.
+          </p>
+          <p style="color: var(--text-body); font-size: 16px; line-height: 1.7; margin: 0 0 16px;">
+            Contamos com uma equipe de analistas e técnicos altamente capacitados, preparados para apresentar as novas tecnologias de forma simples, clara e efetiva. Nosso compromisso é transformar complexidade em praticidade, ajudando empresas e pessoas a aproveitarem ao máximo os recursos tecnológicos disponíveis.
           </p>
           <p style="color: var(--text-body); font-size: 16px; line-height: 1.7; margin: 0;">
-            Hoje unimos infraestrutura Microsoft, redes MikroTik e segurança Fortinet num serviço gerenciado que previne problemas em vez de apenas apagar incêndios.
+            Mais do que fornecer serviços, buscamos ser parceiros estratégicos, guiando nossos clientes rumo ao futuro da tecnologia com excelência e segurança.
           </p>
         </div>
         <div style="border-radius: var(--radius-2xl); overflow: hidden; min-height: 340px; background: linear-gradient(150deg, var(--blue-500) 0%, var(--blue-700) 60%, var(--blue-900) 100%); position: relative;">

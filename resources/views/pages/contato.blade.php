@@ -71,8 +71,6 @@
         <div style="display: flex; flex-direction: column; gap: 20px;">
           @foreach ([
             ['Telefone', '(71) 98419-8239', 'Seg a Sex, 8h às 18h — emergência 24/7', 'tel:+5571999999999', 'M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z'],
-            ['E-mail', 'contato@infosuportes.com.br', 'Respondemos em até 1 dia útil', 'mailto:contato@infosuportes.com.br', 'M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z M22 7l-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7'],
-            ['Endereço', 'Salvador, Bahia', 'Atendimento em toda a região metropolitana', '#', 'M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0z M12 13a3 3 0 1 0 0-6 3 3 0 0 0 0 6z'],
           ] as [$title, $value, $sub, $href, $icon])
             <a href="{{ $href }}" class="card" style="display: flex; align-items: center; gap: 18px; text-decoration: none;">
               <span class="icon-badge" style="background: var(--accent-soft); color: var(--green-600); flex: none;">
@@ -86,13 +84,6 @@
             </a>
           @endforeach
 
-          <div style="border-radius: var(--radius-xl); overflow: hidden; min-height: 180px; background: linear-gradient(150deg, var(--green-400) 0%, var(--green-600) 60%, var(--green-800) 100%); position: relative;">
-            <svg viewBox="0 0 400 400" preserveAspectRatio="xMidYMid slice" style="position: absolute; inset: 0; width: 100%; height: 100%; opacity: 0.16;"><path d="M-40 210 L150 20 L250 20 L60 210 L250 400 L150 400 Z" fill="#fff"></path><path d="M120 210 L310 20 L410 20 L220 210 L410 400 L310 400 Z" fill="#fff"></path></svg>
-            <div style="position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.9); font-weight: 700; gap: 10px;">
-              <svg style="width: 22px; height: 22px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              Salvador — BA
-            </div>
-          </div>
         </div>
 
       </div>
