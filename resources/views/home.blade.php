@@ -33,7 +33,7 @@
 
                 <!-- Headline -->
                 <h1 class="text-4xl lg:text-5xl xl:text-6xl font-bold text-gray-900 leading-tight mb-6">
-                    Suporte de TI que <span class="text-primary-500">Escala</span> com seu Negócio
+                    Quem disse que tecnologia <span class="text-primary-500">custa caro?</span> Conheça nossos serviços com preços que cabem no seu negócio!
                 </h1>
 
                 <!-- Subheadline -->
