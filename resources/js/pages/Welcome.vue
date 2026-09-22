@@ -100,7 +100,7 @@ onUnmounted(() => {
 <template>
     <div class="min-h-screen bg-[#0d1b2e] text-slate-200">
         <!-- NAV -->
-        <header class="border-b border-[#1e3a5f] bg-gradient-to-r from-[#0d1b2e] to-[#0d1b2e] shadow-lg">
+        <header class="bg-gradient-to-r from-[#0d1b2e] to-[#0d1b2e] shadow-lg">
             <div class="mx-auto flex max-w-7xl items-center justify-between px-6 py-4">
                 <img src="/images/infosuporte.png" alt="Horizn Future" class="h-16 object-contain drop-shadow-lg transition hover:drop-shadow-[0_0_12px_rgba(74,174,222,0.5)]" />
 
