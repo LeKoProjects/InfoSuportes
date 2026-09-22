@@ -243,20 +243,6 @@ a:hover { color: var(--text-link-hover); }
     ];
   @endphp
 
-  <!-- Top utility bar -->
-  <div class="util-bar" style="background: var(--gray-950); color: var(--gray-300);">
-    <div style="max-width: var(--container-max); margin: 0 auto; padding: 0 24px; height: 48px; display: flex; align-items: center; justify-content: flex-end; gap: 28px; font-size: 12.5px; font-weight: 600; letter-spacing: 0.02em;">
-      <a href="{{ route('contato') }}" style="color: var(--gray-300);">DIAGNÓSTICO GRATUITO</a>
-      <span style="color: var(--gray-700);">|</span>
-      <a href="#" style="color: var(--gray-300);">ACESSO REMOTO</a>
-      <span style="color: var(--gray-700);">|</span>
-      <a href="#" style="color: var(--gray-300);">PORTAL DO CLIENTE</a>
-      <span style="width: 1px; height: 18px; background: var(--gray-700); margin: 0 4px;"></span>
-      <svg style="width: 17px; height: 17px; color: var(--gray-200); cursor: pointer;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
-      <svg style="width: 17px; height: 17px; color: var(--gray-200); cursor: pointer;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>
-    </div>
-  </div>
-
   <!-- Nav bar -->
   <header style="background: var(--surface-card); position: sticky; top: 0; z-index: 50;">
     <div style="max-width: var(--container-max); margin: 0 auto; padding: 0 24px; height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
@@ -321,7 +307,7 @@ a:hover { color: var(--text-link-hover); }
           </ul>
         </div>
       </div>
-      <div style="border-top: 1px solid var(--gray-800); margin-top: 40px; padding-top: 24px; text-align: center; color: var(--gray-500); font-size: 14px;">
+      <div style="margin-top: 40px; padding-top: 24px; text-align: center; color: var(--gray-500); font-size: 14px;">
         © 2026 InfoSuportes. Todos os direitos reservados.
       </div>
     </div>
