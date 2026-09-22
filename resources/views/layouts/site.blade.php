@@ -258,25 +258,10 @@ a:hover { color: var(--text-link-hover); }
   </div>
 
   <!-- Nav bar -->
-  <header style="background: var(--surface-card); border-bottom: 1px solid var(--border-default); position: sticky; top: 0; z-index: 50;">
+  <header style="background: var(--surface-card); position: sticky; top: 0; z-index: 50;">
     <div style="max-width: var(--container-max); margin: 0 auto; padding: 0 24px; height: 72px; display: flex; align-items: center; justify-content: space-between; gap: 24px;">
       <div style="display: flex; align-items: center; gap: 48px;">
-        <a href="{{ route('home') }}" style="display: flex; align-items: center;"><svg height="40" style="width:auto;display:block" viewBox="0 0 340 72" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="InfoSuportes">
-  <defs>
-    <linearGradient id="isMarkH" x1="8" y1="8" x2="64" y2="64" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0066cc"></stop>
-      <stop offset="1" stop-color="#003d7a"></stop>
-    </linearGradient>
-  </defs>
-  <rect x="8" y="8" width="56" height="56" rx="14" fill="url(#isMarkH)"></rect>
-  <g stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" fill="none" transform="translate(8 8) scale(0.5833)">
-    <path d="M30 66 a14 14 0 0 1 14 -14" opacity="0.95"></path>
-    <path d="M30 66 a26 26 0 0 1 26 -26" opacity="0.6"></path>
-    <path d="M30 66 a38 38 0 0 1 38 -38" opacity="0.32"></path>
-  </g>
-  <circle cx="25.5" cy="46.5" r="4.1" fill="#00a86b"></circle>
-  <text x="80" y="46" font-family="Inter, system-ui, sans-serif" font-size="29" font-weight="800" letter-spacing="-0.5" fill="#111827">Info<tspan fill="#0066cc">Suportes</tspan></text>
-</svg></a>
+        <a href="{{ route('home') }}" style="display: flex; align-items: center;"><img src="/images/infosuporte.png" alt="InfoSuportes" style="height: 50px; width: auto;"></a>
         <nav class="main-nav" style="display: flex; gap: 30px; align-self: stretch; align-items: center;">
           @foreach ($nav as $item)
             <a href="{{ route($item['route']) }}" class="nav-link {{ request()->routeIs($item['route']) ? 'is-active' : '' }}">{{ $item['label'] }}</a>
