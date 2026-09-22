@@ -1,0 +1,12 @@
+{
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "laravel-boost"
+  ],
+  "permissions": {
+    "allow": [
+      "Bash(git add *)",
+      "Bash(git commit *)"
+    ]
+  }
+}
