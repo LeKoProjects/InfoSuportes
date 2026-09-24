@@ -24,7 +24,7 @@
               Infraestrutura gerenciada
             </p>
             <h1 class="hero-h1" style="font-size: 56px; line-height: 1.06; letter-spacing: -0.02em; font-weight: 800; color: #fff; margin: 0;">
-              Suporte de TI que <span style="color: var(--blue-300);">escala</span> com o seu negócio
+              Quem disse que <span style="color: var(--blue-300);">tecnologia</span> custa caro?
             </h1>
             <p style="font-size: 19px; line-height: 1.5; color: var(--gray-300); margin: 24px 0 0; max-width: 560px;">
               Infraestrutura Microsoft, redes MikroTik e segurança Fortinet para empresas que não podem parar. Monitoramento e suporte 24/7, com SLA garantido, em Salvador e região.

@@ -269,22 +269,7 @@ a:hover { color: var(--text-link-hover); }
     <div style="max-width: var(--container-max); margin: 0 auto; padding: 0 24px;">
       <div class="footer-grid" style="display: grid; grid-template-columns: 1.5fr 1fr 1fr; gap: 48px;">
         <div>
-          <svg height="38" style="width:auto;display:block;margin-bottom:20px" viewBox="0 0 340 72" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="InfoSuportes">
-  <defs>
-    <linearGradient id="isMarkW" x1="8" y1="8" x2="64" y2="64" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#1a80ff"></stop>
-      <stop offset="1" stop-color="#0066cc"></stop>
-    </linearGradient>
-  </defs>
-  <rect x="8" y="8" width="56" height="56" rx="14" fill="url(#isMarkW)"></rect>
-  <g stroke="#ffffff" stroke-width="3.2" stroke-linecap="round" fill="none" transform="translate(8 8) scale(0.5833)">
-    <path d="M30 66 a14 14 0 0 1 14 -14" opacity="0.95"></path>
-    <path d="M30 66 a26 26 0 0 1 26 -26" opacity="0.6"></path>
-    <path d="M30 66 a38 38 0 0 1 38 -38" opacity="0.32"></path>
-  </g>
-  <circle cx="25.5" cy="46.5" r="4.1" fill="#00a86b"></circle>
-  <text x="80" y="46" font-family="Inter, system-ui, sans-serif" font-size="29" font-weight="800" letter-spacing="-0.5" fill="#ffffff">Info<tspan fill="#80b8ff">Suportes</tspan></text>
-</svg>
+          <img src="/images/infosuporte.png" alt="InfoSuportes" style="height: 44px; width: auto; display: block; margin-bottom: 20px; filter: brightness(0) invert(1);">
           <p style="color: var(--gray-400); line-height: 1.6; margin: 0; max-width: 300px;">Especialistas em infraestrutura, redes e segurança para empresas de Salvador e região que não podem parar.</p>
           <div style="display: flex; gap: 12px; margin-top: 24px;">
             <span style="display: inline-flex; width: 38px; height: 38px; border-radius: var(--radius-md); background: var(--gray-800); align-items: center; justify-content: center;"><svg style="width: 18px; height: 18px; color: var(--gray-300);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></span>
