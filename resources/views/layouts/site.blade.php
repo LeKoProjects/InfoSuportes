@@ -272,9 +272,9 @@ a:hover { color: var(--text-link-hover); }
           <img src="/images/infosuporte.png" alt="InfoSuportes" style="height: 44px; width: auto; display: block; margin-bottom: 20px; filter: brightness(0) invert(1);">
           <p style="color: var(--gray-400); line-height: 1.6; margin: 0; max-width: 300px;">Especialistas em infraestrutura, redes e segurança para empresas de Salvador e região que não podem parar.</p>
           <div style="display: flex; gap: 12px; margin-top: 24px;">
-            <span style="display: inline-flex; width: 38px; height: 38px; border-radius: var(--radius-md); background: var(--gray-800); align-items: center; justify-content: center;"><svg style="width: 18px; height: 18px; color: var(--gray-300);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></span>
-            <span style="display: inline-flex; width: 38px; height: 38px; border-radius: var(--radius-md); background: var(--gray-800); align-items: center; justify-content: center;"><svg style="width: 18px; height: 18px; color: var(--gray-300);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></span>
-            <span style="display: inline-flex; width: 38px; height: 38px; border-radius: var(--radius-md); background: var(--gray-800); align-items: center; justify-content: center;"><svg style="width: 18px; height: 18px; color: var(--gray-300);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+            <a href="https://wa.me/5571984198239?text=Olá! Gostaria de conversar com um especialista da InfoSuportes." target="_blank" rel="noopener noreferrer" title="WhatsApp" style="display: inline-flex; width: 38px; height: 38px; border-radius: var(--radius-md); background: var(--gray-800); align-items: center; justify-content: center; color: #25d366; transition: all var(--dur-base) var(--ease-out); text-decoration: none;" onmouseover="this.style.backgroundColor='var(--gray-700)'; this.style.color='#25d366';" onmouseout="this.style.backgroundColor='var(--gray-800)'"><svg style="width: 18px; height: 18px; fill: currentColor;" viewBox="0 0 24 24"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.38-.27.3-1.04 1.01-1.04 2.47s1.06 2.86 1.21 3.06c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.79 9.79 0 0 1-1.5-5.23c0-5.4 4.4-9.8 9.82-9.8 2.62 0 5.08 1.03 6.93 2.88a9.74 9.74 0 0 1 2.87 6.93c0 5.4-4.4 9.8-9.8 9.8M20.5 3.49A11.72 11.72 0 0 0 12.05 0C5.56 0 .28 5.28.28 11.77c0 2.07.54 4.1 1.57 5.88L.18 24l6.5-1.7a11.72 11.72 0 0 0 5.37 1.36h.01c6.49 0 11.77-5.28 11.77-11.77 0-3.15-1.22-6.1-3.44-8.33"/></svg></a>
+            <a href="mailto:atendimento@infosuportes.com" title="E-mail" style="display: inline-flex; width: 38px; height: 38px; border-radius: var(--radius-md); background: var(--gray-800); align-items: center; justify-content: center; color: var(--gray-300); transition: all var(--dur-base) var(--ease-out); text-decoration: none;" onmouseover="this.style.backgroundColor='var(--gray-700)'; this.style.color='var(--green-400)';" onmouseout="this.style.backgroundColor='var(--gray-800)'; this.style.color='var(--gray-300)';"><svg style="width: 18px; height: 18px; color: currentColor;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg></a>
+            <a href="tel:+5571984198239" title="Telefone" style="display: inline-flex; width: 38px; height: 38px; border-radius: var(--radius-md); background: var(--gray-800); align-items: center; justify-content: center; color: var(--gray-300); transition: all var(--dur-base) var(--ease-out); text-decoration: none;" onmouseover="this.style.backgroundColor='var(--gray-700)'; this.style.color='var(--green-400)';" onmouseout="this.style.backgroundColor='var(--gray-800)'; this.style.color='var(--gray-300)';"><svg style="width: 18px; height: 18px; color: currentColor;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
           </div>
         </div>
         <div>
@@ -287,9 +287,32 @@ a:hover { color: var(--text-link-hover); }
         </div>
         <div>
           <h4 style="color: #fff; font-weight: 700; font-size: 16px; margin: 0 0 18px;">Contato</h4>
-          <ul style="list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; gap: 12px;">
-            <li style="display: flex; align-items: center; gap: 10px; color: var(--gray-400); font-size: 14.5px;"><svg style="width: 16px; height: 16px; color: var(--green-400);" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>(71) 98419-8239</li>
-          </ul>
+          <!-- Contact Tabs -->
+          <div style="margin-bottom: 24px;">
+            <div class="contact-tabs" style="display: flex; gap: 8px; margin-bottom: 14px; border-bottom: 2px solid var(--gray-700);">
+              <button class="contact-tab-btn active" data-tab="phone" style="background: none; border: none; color: var(--gray-300); padding: 8px 0; cursor: pointer; font-weight: 600; font-size: 13px; border-bottom: 3px solid transparent; transition: all var(--dur-base) var(--ease-out); color: var(--green-500); border-bottom-color: var(--green-500);">Telefone</button>
+              <button class="contact-tab-btn" data-tab="email" style="background: none; border: none; color: var(--gray-300); padding: 8px 0; cursor: pointer; font-weight: 600; font-size: 13px; border-bottom: 3px solid transparent; transition: all var(--dur-base) var(--ease-out);">E-mail</button>
+              <button class="contact-tab-btn" data-tab="address" style="background: none; border: none; color: var(--gray-300); padding: 8px 0; cursor: pointer; font-weight: 600; font-size: 13px; border-bottom: 3px solid transparent; transition: all var(--dur-base) var(--ease-out);">Endereço</button>
+              <button class="contact-tab-btn" data-tab="whatsapp" style="background: none; border: none; color: var(--gray-300); padding: 8px 0; cursor: pointer; font-weight: 600; font-size: 13px; border-bottom: 3px solid transparent; transition: all var(--dur-base) var(--ease-out);">WhatsApp</button>
+            </div>
+            <div class="contact-tab-content">
+              <div class="contact-tab-pane active" id="phone" style="display: flex; align-items: center; gap: 10px; color: var(--gray-400); font-size: 14.5px;">
+                <svg style="width: 16px; height: 16px; color: var(--green-400); flex-shrink: 0;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                <a href="tel:+5571984198239" style="color: var(--gray-400); text-decoration: none; transition: color var(--dur-base) var(--ease-out);">(71) 98419-8239</a>
+              </div>
+              <div class="contact-tab-pane" id="email" style="display: none; align-items: center; gap: 10px; color: var(--gray-400); font-size: 14.5px;">
+                <svg style="width: 16px; height: 16px; color: var(--green-400); flex-shrink: 0;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="16" x="2" y="4" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>
+                <a href="mailto:atendimento@infosuportes.com" style="color: var(--gray-400); text-decoration: none; transition: color var(--dur-base) var(--ease-out);">atendimento@infosuportes.com</a>
+              </div>
+              <div class="contact-tab-pane" id="address" style="display: none; color: var(--gray-400); font-size: 14.5px;">
+                <p style="margin: 0; line-height: 1.6;">Salvador, Bahia<br>Brasil</p>
+              </div>
+              <div class="contact-tab-pane" id="whatsapp" style="display: none; align-items: center; gap: 10px; color: var(--gray-400); font-size: 14.5px;">
+                <svg style="width: 16px; height: 16px; color: #25d366; flex-shrink: 0;" viewBox="0 0 24 24" fill="currentColor"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.38-.27.3-1.04 1.01-1.04 2.47s1.06 2.86 1.21 3.06c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.79 9.79 0 0 1-1.5-5.23c0-5.4 4.4-9.8 9.82-9.8 2.62 0 5.08 1.03 6.93 2.88a9.74 9.74 0 0 1 2.87 6.93c0 5.4-4.4 9.8-9.8 9.8M20.5 3.49A11.72 11.72 0 0 0 12.05 0C5.56 0 .28 5.28.28 11.77c0 2.07.54 4.1 1.57 5.88L.18 24l6.5-1.7a11.72 11.72 0 0 0 5.37 1.36h.01c6.49 0 11.77-5.28 11.77-11.77 0-3.15-1.22-6.1-3.44-8.33"/></svg>
+                <a href="https://wa.me/5571984198239?text=Olá! Gostaria de conversar com um especialista da InfoSuportes." target="_blank" rel="noopener noreferrer" style="color: var(--gray-400); text-decoration: none; transition: color var(--dur-base) var(--ease-out);">Conversar via WhatsApp</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       <div style="margin-top: 40px; padding-top: 24px; text-align: center; color: var(--gray-500); font-size: 14px;">
@@ -311,6 +334,38 @@ a:hover { color: var(--text-link-hover); }
     <span class="wa-float-label">Fale conosco</span>
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.47 14.38c-.3-.15-1.75-.86-2.02-.96-.27-.1-.47-.15-.67.15-.2.3-.77.96-.94 1.16-.17.2-.35.22-.64.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.47-1.75-1.65-2.05-.17-.3-.02-.46.13-.6.13-.14.3-.35.45-.53.15-.18.2-.3.3-.5.1-.2.05-.38-.02-.53-.08-.15-.67-1.6-.92-2.2-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.79.38-.27.3-1.04 1.01-1.04 2.47s1.06 2.86 1.21 3.06c.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.63.71.22 1.36.19 1.87.12.57-.09 1.75-.72 2-1.41.25-.69.25-1.28.17-1.41-.07-.13-.27-.2-.57-.35M12.05 21.8h-.02a9.8 9.8 0 0 1-4.99-1.37l-.36-.21-3.71.97.99-3.62-.23-.37a9.79 9.79 0 0 1-1.5-5.23c0-5.4 4.4-9.8 9.82-9.8 2.62 0 5.08 1.03 6.93 2.88a9.74 9.74 0 0 1 2.87 6.93c0 5.4-4.4 9.8-9.8 9.8M20.5 3.49A11.72 11.72 0 0 0 12.05 0C5.56 0 .28 5.28.28 11.77c0 2.07.54 4.1 1.57 5.88L.18 24l6.5-1.7a11.72 11.72 0 0 0 5.37 1.36h.01c6.49 0 11.77-5.28 11.77-11.77 0-3.15-1.22-6.1-3.44-8.33"/></svg>
   </a>
+
+  <script>
+    (function () {
+      const tabBtns = document.querySelectorAll('.contact-tab-btn');
+      const tabPanes = document.querySelectorAll('.contact-tab-pane');
+
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', function () {
+          const tabName = this.getAttribute('data-tab');
+
+          tabBtns.forEach(b => {
+            b.classList.remove('active');
+            b.style.color = 'var(--gray-300)';
+            b.style.borderBottomColor = 'transparent';
+          });
+
+          tabPanes.forEach(pane => {
+            pane.style.display = 'none';
+          });
+
+          this.classList.add('active');
+          this.style.color = 'var(--green-500)';
+          this.style.borderBottomColor = 'var(--green-500)';
+
+          const activePane = document.getElementById(tabName);
+          if (activePane) {
+            activePane.style.display = 'flex';
+          }
+        });
+      });
+    })();
+  </script>
 
 </div>
 
